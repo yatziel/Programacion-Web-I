@@ -1,0 +1,79 @@
+<!-- 
+
+  Formularios
+
+  Son elementos que permiten el ingreso de información por parte del usuario.
+
+  <form>...</form> 👉 contenedor del formulario.
+  
+  <input /> 👉 campos de acceso de información. Son etiquetas de autocierre. Hay inputs de texto, de boton, checkbox, etc.
+  
+  <label>...</label> 👉 etiquetas asociadas a un input.
+
+  <textarea>...</textarea> 👉 un campo de texto más grande o para textos largos.
+
+  <select>...</select> 👉 Abren un menu desplegable
+
+  <option>...</option> 👉 opciones del menu desplegable.
+
+  <button>...</button> 👉 un boton, que generalmente al ser precionado envio los datos. Para esto necesita ser programado.
+
+  Parametros
+
+  Para label
+
+    for 👉 indica la relación con el input.
+
+  Para input
+
+    type 👉 el tipo de campo
+    name 👉 nombre del input con el que se relaciona el label.
+    id 👉 idenficador del input para programar el formulario
+    placeholder 👉 texto que aparece dentro del input como pista para el usuario.
+
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>✏️ Formularios</title>
+</head>
+<body>
+  <h1>✏️ Formularios</h1>
+
+  <h2>Contacto</h2>
+
+  <form>
+    <label for="nombre">Nombre</label>
+    <br />
+    <input name="nombre" type="text" id="nombre" placeholder="Antonio Hernández"/>
+    <br />
+
+    <label for="email">Email</label>
+    <br />
+    <input name="email" type="email" id="email" placeholder="antonio@gmail.com"/>
+    <br />
+
+    <label for="mensaje">Mensaje</label>
+    <br />
+    <textarea name="mensaje" id="mensaje" placeholder="Escribe aquí tu mensaje buena ondi...!"></textarea>
+    <br />
+
+    <label for="pais">Pais</label>
+    <br />
+    <select name="pais" id="pais">
+      <option>México</option>
+      <option>Colombia</option>
+      <option>Brasil</option>
+    </select>
+    <br />
+    <br />
+    <br />
+    <br />
+    <button type="submit" id="submit">¡Pikale aquí! 👇</button>
+  </form>
+
+</body>
+</html>
