@@ -1,0 +1,82 @@
+/* 
+
+  Fuentes
+
+  Las fuentes un aspecto fundamento del diseño web, influyen en la estética, legibilidad y jerarquí visual.
+
+  Para definir una familia tipográfica usamos la propiedad:
+
+    font-family: "nombre de la fuente";
+
+  1. Web Safe Fonts › Fuentes Web Seguras. Son tipografías predeterminadas y que se pueden usar en cualquier dipositivo, sistema operativo o navegador web.
+
+    👉 Por estilo o categoría › Keywords o palabras clave
+
+      - serif
+      - sans-serif
+      - monospace
+      - cursive › script
+      - fantasy › decorativa
+
+    👉 Por nombre de la familia tipográfica
+
+      - Arial
+      - "Times New Roman"
+      - Verdana
+      - Geneva
+      - Tahoma
+      ...
+    
+    Los valores con un más de una palabra se escriben entre comillas dobles "" o simples ''
+
+    La recomendación es usar maximo 2 fuentes de respaldo, si por alguna razón no se carga la fuente principal, se cargaran las seundarias. Los nombres se separan por comas ,
+
+*/
+
+body {
+  font-family: serif; /* Default del user agent */
+  font-family: sans-serif;
+  font-family: monospace;
+  font-family: cursive;
+  font-family: fantasy; /* Impact */
+}
+
+
+h1 {
+  font-family: Arial;
+  font-family: "Times New Roman";
+  font-family: Verdana;
+  font-family: "Gill Sans";
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", Arial, sans-serif;
+}
+
+/* 
+
+  2. Fuentes Personalizadas. Son fuentes que nosotros elegimos deacuerdo al estilo de la web o a los lineamientos de la marca gráfica.
+
+  - Fuentes externas 👉 Se llaman a traves de recursos en línea o servidores remotos. Por ejemplo Google Fonts.
+  - Fuentes internas 👉 Se llaman a través de nuestras carpetas o servidor propio. 
+
+*/
+
+.subtitle {
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* 
+
+  Llamamos a nuestra tipografia interna con la sentencia @font-face
+
+*/
+
+@font-face {
+  font-family: "Puchunguita";
+  src: url("./Matcha-Vibes.otf"), format("otf");
+}
+
+p {
+  font-family: "Puchunguita", fantasy;
+}
