@@ -1,0 +1,97 @@
+/* Resset Básico */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightsalmon;
+  font-family: sans-serif;
+  color: darkblue;
+}
+
+img {
+  opacity: 1; /* 0 al 1  */
+/*   display: block; */
+}
+
+/* 
+
+  Bordes Redondeados (Border Radius)
+ 
+  Nos permite redondear las esquinas de los elementos del html
+
+  Shorthand 👇
+
+    border-radius: top-l top-r bottom-r bottom-l // 4 valores
+    border-radius: top-l top-rigth/bottom-l bottom-rigth; // 3 valores
+    border-radius: top-l/bottom-r top-r/buttom-l; // 2 valores
+    border-radius: tl/tr/br/bl; // 1 valor
+
+  Propiedades individuales
+
+    border-top-left-radius: valor;
+    border-top-rigth-radius: valor;
+    border-bottom-rigth-radius: valor;
+    border-botom-left-radius: valor;
+
+  Desbordamiento (overflow)
+
+  Es la propiedad que controla el comportamiento de un contenedos cuando el contenido se desborda.
+
+  Un contenido se desborda cuando sale por los bordes de la caja que lo contiene.
+
+  La propiedad overflow también es un shorthand que abrevia dos dimensiones x,y
+
+  Shorthand 👇
+
+    overflow: visible; // Valor por defecto
+    overflow: hidden; // El contenido que se desborda se ocula a partir del borde del contenedor.
+    overflow: scroll; // Se muestran las barras de scroll
+    overflow: auto; // El navegador decide si se necesita mostrar las barras o no.
+
+  Propiedades individuales
+
+    overflow-x: valor;
+    overflow-y: valor;
+
+*/
+
+.box {
+  width:  300px;
+  height: 300px;
+  color: aliceblue;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+/*   padding-top: 120px; */
+  margin: 24px;
+  display: inline-block;
+
+  overflow: visible;
+  overflow: hidden;
+  overflow: scroll;
+}
+
+.box-1 {
+  background-color: darkcyan;
+  border-radius: 24px;
+  border-radius: 48px 12px;
+  border-radius: 48px 12px 8px;
+  border-radius: 48px 24px 12px 8px;
+}
+
+.box-2 {
+  background-color: darkmagenta;
+  border-top-left-radius: 72px;
+  border-bottom-left-radius: 72px;
+}
+
+.box-3 {
+  background-color: darkred;
+  border-radius: 50%; /* Circulo cuando es una caja cuadrada */
+ /*  height: 400px;  */
+}
+
